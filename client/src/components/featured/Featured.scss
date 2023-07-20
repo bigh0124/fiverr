@@ -1,0 +1,93 @@
+.featured {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  background-color: #013914;
+  color: white;
+  .container {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 20px;
+      h1 {
+        font-size: 50px;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 3px;
+        .searchInput {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+          }
+          input {
+            border: none;
+            outline: none;
+          }
+        }
+        button {
+          width: 120px;
+          height: 50px;
+          background-color: #1dbf73;
+          border: none;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+      .popular {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        button {
+          padding: 5px 10px;
+          border: 1px solid white;
+          color: white;
+          background-color: transparent;
+          border-radius: 5px;
+          transition: 0.5s all ease;
+          font-size: 20px;
+          cursor: pointer;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+    .right {
+      position: relative;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+      .info {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        background-color: rgba(241, 232, 232, 0.3);
+        padding: 3px;
+        border-radius: 2px;
+        span {
+          font-weight: bold;
+          font-size: 16px;
+          color: rgb(255, 251, 251);
+        }
+      }
+    }
+  }
+}
